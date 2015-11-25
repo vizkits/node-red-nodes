@@ -1,0 +1,35 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lightbluebean',{
+        category: 'advanced-function',
+        color: "CornflowerBlue",
+        defaults: {
+            topic: {value:""},
+            name: {value:"lightblue bean"}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "feed.png",
+        label: function() {
+            return this.name || "lightblue bean";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="lightbluebean">
+    <div class="form-row">
+        <label for="node-input-uuid"><i class="fa fa-ellipsis-h"></i> UUID</label>
+        <input type="text" id="node-input-uuid" placeholder="optional device bluetooth id">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="optional topic prefix - defaults to device id">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="lightbluebean">
+    <p>Node to read from the Photon</p>
+</script>
