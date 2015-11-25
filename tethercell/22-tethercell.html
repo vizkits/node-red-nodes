@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('tethercell',{
+        category: 'advanced-function',
+        color: 'Pink',
+        defaults: {
+            uuid: {value:""},
+            name: {value:"tethercell"}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "bluetooth.png",
+        label: function() {
+            return this.name || "tethercell";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="tethercell">
+    <div class="form-row">
+        <label for="node-input-uuid"><i class="fa fa-ellipsis-h"></i> UUID</label>
+        <input type="text" id="node-input-uuid" placeholder="optional device bluetooth id">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="tethercell">
+    <p>Node to read from the Tethercell</p>
+    <a href="http://tethercell.myshopify.com">http://tethercell.myshopify.com</a>
+</script>

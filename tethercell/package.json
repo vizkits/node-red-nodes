@@ -1,0 +1,30 @@
+{
+  "name": "node-red-contrib-tethercell",
+  "version": "0.0.1",
+  "description": "Node-Red nodes for communicating with tethercell",
+  "main": "22-tethercell.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "tethercell": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vizkits/node-red-contrib-tethercell.git"
+  },
+  "keywords": [
+    "node-red",
+    "tethercell"
+  ],
+  "node-red": {
+    "nodes": {
+      "tethercell": "22-tethercell.js"
+    }
+  },
+  "author": {
+    "name": "Alex Chien"
+  },
+  "license": "Apache-2.0"
+}
