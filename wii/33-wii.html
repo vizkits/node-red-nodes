@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('wii',{
+        category: 'advanced-function',
+        color: 'GreenYellow',
+        defaults: {
+            topic: {value:""},
+            name: {value:"wii"}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "bluetooth.png",
+        label: function() {
+            return this.name || "wii";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="wii">
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="optional topic prefix - defaults to device id">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="wii">
+    <p>Node to read from the Wii</p>
+</script>
