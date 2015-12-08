@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('autokey',{
+        category: 'advanced-function',
+        color: 'Khaki',
+        defaults: {
+            name: {value:"autokey"}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "arrow-in.png",
+        label: function() {
+            return this.name || "autokey";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="autokey">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="autokey">
+    <p>Node to read from mouse, keyboard and screen</p>
+</script>

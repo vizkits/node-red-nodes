@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-autokey",
+  "version": "0.0.1",
+  "description": "Node-Red nodes for communicating with mouse, keyboard and screen",
+  "main": "77-autokey.js",
+  "dependencies": {
+    "robotjs": "^0.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vizkits/node-red-nodes/tree/master/autokey"
+  },
+  "keywords": [
+    "node-red",
+    "autokey"
+  ],
+  "node-red": {
+    "nodes": {
+      "autokey": "77-autokey.js"
+    }
+  },
+  "author": {
+    "name": "Alex Chien"
+  }
+}
