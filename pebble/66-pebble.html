@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('pebble',{
+        category: 'advanced-function',
+        color: "Salmon",
+        defaults: {
+            host: {value:"192.168.1.1"},
+            port: {value:"8080"},
+            topic: {value:""},
+            name: {value:"pebble"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "feed.png",
+        label: function() {
+            return this.name || "pebble";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="pebble">
+    <div class="form-row">
+        <label for="node-input-host"><i class="fa fa-tasks"></i> Host</label>
+        <input type="text" id="node-input-host" placeholder="Host">
+    </div>
+    <div class="form-row">
+        <label for="node-input-port"><i class="fa fa-tasks"></i> Port</label>
+        <input type="text" id="node-input-port" placeholder="Port">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-tasks"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="optional topic prefix - defaults to device id">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="pebble">
+    <p>Node to read from the Pebble</p>
+</script>
